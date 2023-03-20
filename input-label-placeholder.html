@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            position: relative;
+        }
+        label{
+            padding: 12px;
+            font-size: 1.4rem;
+            position: absolute;
+            top:0;
+         opacity: .5;
+            left: 0;
+            background-color: transparent;
+            pointer-events: none;
+                transition: 0.2s;
+            transition-timing-function: ease;
+        }
+        input{
+            padding-left: 10px;
+            width:400px;
+            height: 50px;
+             font-size: 1.4rem;
+        }
+          input:focus + label{
+                 background-color: white;
+                 opacity:1;
+            transform: scale(0.75) translateY(-60%) translateX(0px);
+          }
+    </style>
+</head>
+<body>
+    <div><input type="text">
+    <label>Name</label></div>
+
+    <!-- <div>input:not(:placeholder-shown) + label // use this for lengend type of input</div> -->
+</body>
+</html>
